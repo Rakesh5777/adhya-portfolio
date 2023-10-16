@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Regular";
+  src: url("./assets/fonts/GraphikRegular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Semibold";
+  src: url("./assets/fonts/GraphikSemibold.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Medium";
+  src: url("./assets/fonts/GraphikMedium.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Regular";
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+div {
+  font-family: "Regular";
+}
+
+h1 {
+  font-family: "Semibold";
+  cursor: cursor;
+}
+
+h2 {
+  font-family: "Semibold";
+  cursor: cursor;
+}

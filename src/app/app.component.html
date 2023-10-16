@@ -1,0 +1,46 @@
+<div class="loader absolute z-40 h-screen w-screen top-0 text-white flex justify-center content-center">
+  <ng-lottie [width]="'50%'" [height]="'100%'" [options]="options" class="flex justify-center content-center"
+    (animationCreated)="animationCreated($event)"></ng-lottie>
+</div>
+<div class="wrapper">
+  <div class="hero-text text-red-600 opacity-95 flex justify-center flex-col">
+    <div class="hello-text overflow-hidden">
+      <video id="waves" class="video -transformY" src="../assets/video_waves3.webm" autoplay loop></video>
+      <h1 class="text-white relative text-video-blend transformY">Hello.</h1>
+    </div>
+    <div class="secondary overflow-hidden">
+      <h1 class="subtitle transformY">I am</h1>
+    </div>
+    <div class="third overflow-hidden">
+      <h1 class="name transformY">Adhya</h1>
+    </div>
+  </div>
+  <div class="img" alt="adhya"></div>
+  <section class="display"></section>
+  <section class=" description-section relative z-10 text-red-600">
+    <div class="description absolute">
+      <h2>I love <br> Coding <br> Full stack</h2>
+    </div>
+  </section>
+  <section class="skills z-10">
+    <div class="skills-heading absolute">
+      <h1 class="text-red-600 z-20">Things <br> I am <br> good at</h1>
+    </div>
+    <div class="marquee-container">
+      <div class="marquee">
+        <div class="marquee__part techStack1"> {{techStack1}} {{techStack1}} {{techStack1}} {{techStack1}}</div>
+      </div>
+      <div class="marquee mt-1 flex">
+        <div class="marquee__part techStack2"> {{techStack2}} {{techStack2}} {{techStack2}} {{techStack2}}</div>
+      </div>
+    </div>
+  </section>
+  <section class="experience z-30">
+    <div class="exp-heading absolute">
+      <h1 class="text-red-600 z-20"><br>To know More about My work</h1>
+      <h1 class=" z-20 underline-span"><span class="underline text-red-60"
+          (click)="openLinkedIn()">Click here</span>
+      </h1>
+    </div>
+  </section>
+</div>
